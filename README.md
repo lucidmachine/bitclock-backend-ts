@@ -1,3 +1,3 @@
 # bitclock-backend-ts
 
-A BitClock backend written in TypeScript.
+A [BitClock](https://github.com/lucidmachine/bitclock/) backend written in TypeScript.
