@@ -3,12 +3,13 @@ test
 tsconfig.json
 tsconfig.module.json
 tslint.json
-.travis.yml
+.circleci
+.git
 .github
 .prettierignore
 .vscode
+.idea
 build/docs
+build/coverage
 **/*.spec.*
-coverage
-.nyc_output
 *.log
