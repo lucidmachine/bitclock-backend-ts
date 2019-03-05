@@ -1,5 +1,5 @@
 {
-  "name": "bitclock-backend-ts",
+  "name": "bitclock-backend",
   "version": "1.0.1",
   "description": "A BitClock backend written in TypeScript.",
   "main": "build/main/index.js",
