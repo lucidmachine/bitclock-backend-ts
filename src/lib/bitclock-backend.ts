@@ -1,4 +1,11 @@
-import { Bit, BitDigit, BitTime } from 'bitclock';
+export type Bit = 0 | 1;
+export type BitDigit = [Bit, Bit, Bit, Bit];
+export type BitTime = BitDigit[];
+
+export interface UpdateFn {
+  (bitTime: BitTime): void;
+}
+
 
 const tensDigit = (num: number): number => Math.floor(num / 10);
 
