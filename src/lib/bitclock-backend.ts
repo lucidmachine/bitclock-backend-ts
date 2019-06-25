@@ -1,5 +1,6 @@
 export type Bit = 0 | 1;
-export type BitDigit = [Bit, Bit, Bit, Bit];
+// tslint:disable-next-line:readonly-array
+export type BitDigit = Readonly<[Bit, Bit, Bit, Bit]>;
 export type BitTime = ReadonlyArray<BitDigit>;
 export type UpdateFn = (bitTime: BitTime) => void;
 
