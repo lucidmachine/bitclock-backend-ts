@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/lucidmachine/bitclock-backend-ts/compare/v1.0.4...v1.1.0) (2019-06-26)
+
+
+### Bug Fixes
+
+* Patch vulnerabilities in js-yaml, handlebars, shelljs ([66c0786](https://github.com/lucidmachine/bitclock-backend-ts/commit/66c0786))
+
+
+### Features
+
+* Add CI status badge ([af3cd0c](https://github.com/lucidmachine/bitclock-backend-ts/commit/af3cd0c))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/lucidmachine/bitclock-backend-ts/compare/v1.0.3...v1.0.4) (2019-03-07)
 
