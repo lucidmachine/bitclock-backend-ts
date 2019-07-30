@@ -80,7 +80,7 @@
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.17.0",
     "tslint-immutable": "^5.5.2",
-    "typedoc": "^0.14.2",
+    "typedoc": "^0.15.0",
     "typescript": "^3.5.3"
   },
   "config": {
