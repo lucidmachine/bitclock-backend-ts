@@ -65,9 +65,13 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<p><a href="https://circleci.com/gh/lucidmachine/bitclock-backend-ts"><img src="https://circleci.com/gh/lucidmachine/bitclock-backend-ts.svg?style=svg" alt="CircleCI"></a></p>
-				<h1 id="bitclock-backend">bitclock-backend</h1>
+				<a href="#bitclock-backend" id="bitclock-backend" style="color: inherit; text-decoration: none;">
+					<h1>bitclock-backend</h1>
+				</a>
 				<p>A <a href="https://github.com/lucidmachine/bitclock/">BitClock</a> backend written in TypeScript.</p>
-				<h1 id="usage">Usage</h1>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h1>Usage</h1>
+				</a>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { bitTime, BitTime, bitDigit, BitDigit, bit, Bit } <span class="hljs-keyword">from</span> <span class="hljs-string">'bitclock'</span>;
 
 
@@ -85,14 +89,23 @@
 <span class="hljs-keyword">const</span> foursPlaceForNine: Bit  = bit(<span class="hljs-number">4</span>, <span class="hljs-number">9</span>); <span class="hljs-comment">// 0</span>
 <span class="hljs-keyword">const</span> twosPlaceForNine: Bit   = bit(<span class="hljs-number">2</span>, <span class="hljs-number">9</span>); <span class="hljs-comment">// 0</span>
 <span class="hljs-keyword">const</span> onesPlaceForNine: Bit   = bit(<span class="hljs-number">1</span>, <span class="hljs-number">9</span>); <span class="hljs-comment">// 1</span></code></pre>
-				<h1 id="architecture">Architecture</h1>
-				<h2 id="data-structures">Data Structures</h2>
-				<h3 id="bitdigit">BitDigit</h3>
+				<a href="#architecture" id="architecture" style="color: inherit; text-decoration: none;">
+					<h1>Architecture</h1>
+				</a>
+				<a href="#data-structures" id="data-structures" style="color: inherit; text-decoration: none;">
+					<h2>Data Structures</h2>
+				</a>
+				<a href="#bitdigit" id="bitdigit" style="color: inherit; text-decoration: none;">
+					<h3>BitDigit</h3>
+				</a>
 				<p>A BitDigit is an array of 4 bits which represents a single digit. Positions in the array signify place values 8, 4, 2, and 1. The value stored in that position may be either a 0 or a 1. If the value is a 1, then the corresponding place value should be added to the sum. If the value is a 0, then the corresponding place value is ignored.</p>
 				<pre><code><span class="hljs-comment">// 8  4  2  1</span>
   [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>]  <span class="hljs-comment">// 8 + 0 + 0 + 1 = 9</span>
   [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]  <span class="hljs-comment">// 0 + 4 + 2 + 0 = 6</span>
-</code></pre><h3 id="bittime">BitTime</h3>
+</code></pre>
+				<a href="#bittime" id="bittime" style="color: inherit; text-decoration: none;">
+					<h3>BitTime</h3>
+				</a>
 				<p>A BitTime is an array of BitDigits. Each item is a digit in the current time read left to right.</p>
 				<pre><code><span class="hljs-comment">// 12:34:56</span>
 [
@@ -103,9 +116,14 @@
   [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],  <span class="hljs-comment">// M2: 0 + 1 + 0 + 0 = 4</span>
   [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],  <span class="hljs-comment">// S1: 0 + 1 + 0 + 1 = 5</span>
   [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]   <span class="hljs-comment">// S2: 0 + 1 + 1 + 0 = 6</span>
-]</code></pre><h2 id="backend">Backend</h2>
+]</code></pre>
+				<a href="#backend" id="backend" style="color: inherit; text-decoration: none;">
+					<h2>Backend</h2>
+				</a>
 				<p>Backends retrieve the current time and transform it into a BitTime.</p>
-				<h2 id="frontend">Frontend</h2>
+				<a href="#frontend" id="frontend" style="color: inherit; text-decoration: none;">
+					<h2>Frontend</h2>
+				</a>
 				<p>Frontends transform a BitTime into something an end user can interpret. Reference implementations exist to draw pixels in a web page or favicon, but ambitious hackers could write to a visual CLI, LEDs, audio, or even a braille terminal.</p>
 			</div>
 		</div>
@@ -169,6 +187,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -217,7 +236,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
