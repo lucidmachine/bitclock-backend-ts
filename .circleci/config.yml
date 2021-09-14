@@ -4,7 +4,7 @@ jobs:
   'node-10':
     docker:
       - image: circleci/node:10
-    working_directory: ~/typescript-starter
+    working_directory: ~/bitclock-backend-ts
     steps:
       - checkout
       # Download and cache dependencies
@@ -19,11 +19,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm test
-      - run: npm run build cov:build && npx codecov
+      - run: npm run build
   'node-latest':
     docker:
       - image: circleci/node:latest
-    working_directory: ~/typescript-starter
+    working_directory: ~/bitclock-backend-ts
     steps:
       - checkout
       - restore_cache:
@@ -36,7 +36,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm test
-      - run: npm run build cov:build && npx codecov
+      - run: npm run build
 
 workflows:
   version: 2
