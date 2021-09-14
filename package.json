@@ -21,9 +21,8 @@
     "build:module": "tsc --project tsconfig.module.json",
     "build": "npm run clean && npm run build:main && npm run build:module",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
-    "fix:tslint": "tslint --fix --project .",
-    "fix": "npm run fix:prettier fix:tslint",
-    "test:lint": "tslint --project . && prettier \"src/**/*.ts\" --list-different",
+    "fix": "npm run fix:prettier",
+    "test:lint": "prettier \"src/**/*.ts\" --list-different",
     "test:unit": "jest",
     "test": "npm run build && npm run test:lint test:unit",
     "watch": "npm run clean && tsc --project tsconfig.json --watch & jest --watch & wait",
@@ -46,9 +45,6 @@
     "jest-date-mock": "^1.0.8",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",
-    "tslint": "^5.20.1",
-    "tslint-config-prettier": "^1.17.0",
-    "tslint-immutable": "^5.5.2",
     "typescript": "^3.9.7"
   },
   "prettier": {
