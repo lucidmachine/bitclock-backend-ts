@@ -28,7 +28,7 @@
     "test": "npm run build && npm run test:lint test:unit",
     "watch": "npm run clean && tsc --project tsconfig.json --watch & jest --watch & wait",
     "cov:build": "jest --coverage",
-    "cov": "npm run build cov:build && opn build/coverage/index.html",
+    "cov": "npm run build && npm run cov:build && firefox build/coverage/index.html",
     "reset": "git clean -dfx && git reset --hard && npm i",
     "all": "npm run reset test"
   },
@@ -44,7 +44,6 @@
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
     "jest-date-mock": "^1.0.8",
-    "opn-cli": "^4.1.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",
     "tslint": "^5.20.1",
