@@ -1,6 +1,10 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+### [1.1.4](https://github.com/lucidmachine/bitclock-backend-ts/compare/v1.1.3...v1.1.4) (2021-09-14)
+
+* Slash and burn dependencies and build scripts.
+* Update remaining dependencies and build scripts.
+
 
 ### [1.1.3](https://github.com/lucidmachine/bitclock-backend-ts/compare/v1.1.2...v1.1.3) (2021-09-14)
 
