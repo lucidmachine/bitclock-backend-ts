@@ -16,7 +16,6 @@
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
   "scripts": {
-    "info": "npm-scripts-info",
     "clean": "for d in build test; do if [ -d \"$d\" ]; then rm -r $d; fi; done",
     "build:main": "tsc --project tsconfig.json",
     "build:module": "tsc --project tsconfig.module.json",
@@ -35,22 +34,8 @@
     "all": "npm run reset test",
     "prepare-release": "npm run all version"
   },
-  "scripts-info": {
-    "info": "Display information about the package scripts",
-    "build": "Clean and rebuild the project",
-    "fix": "Try to automatically fix any linting problems",
-    "test": "Lint and unit test the project",
-    "watch": "Watch and rebuild the project on save, then rerun relevant tests",
-    "cov": "Rebuild, run tests, then create and open the coverage report",
-    "version": "Bump package.json version, update CHANGELOG.md, tag release",
-    "reset": "Delete all untracked files and reset the repo to the last commit",
-    "prepare-release": "One-step: clean, build, test, and prep a release"
-  },
   "engines": {
     "node": ">=10.15.0"
-  },
-  "dependencies": {
-    "npm-scripts-info": "^0.3.9"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
