@@ -31,7 +31,7 @@
     "cov:build": "jest --coverage",
     "version": "standard-version",
     "reset": "git clean -dfx && git reset --hard && npm i",
-    "clean": "trash build test",
+    "clean": "for d in build test; do if [ -d \"$d\" ]; then rm -r $d; fi; done",
     "all": "run-s reset test",
     "prepare-release": "run-s all version"
   },
@@ -67,7 +67,6 @@
     "opn-cli": "^4.1.0",
     "prettier": "^1.19.1",
     "standard-version": "^8.0.2",
-    "trash-cli": "^1.4.0",
     "ts-jest": "^24.3.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.17.0",
