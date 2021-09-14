@@ -29,10 +29,8 @@
     "watch": "npm run clean && tsc --project tsconfig.json --watch & jest --watch & wait",
     "cov:build": "jest --coverage",
     "cov": "npm run build cov:build && opn build/coverage/index.html",
-    "version": "standard-version",
     "reset": "git clean -dfx && git reset --hard && npm i",
-    "all": "npm run reset test",
-    "prepare-release": "npm run all version"
+    "all": "npm run reset test"
   },
   "engines": {
     "node": ">=10.15.0"
@@ -44,22 +42,15 @@
     "@types/jest": "^24.9.1",
     "@types/node": "^11.15.18",
     "babel-jest": "^24.9.0",
-    "cz-conventional-changelog": "^2.1.0",
     "jest": "^24.9.0",
     "jest-date-mock": "^1.0.8",
     "opn-cli": "^4.1.0",
     "prettier": "^1.19.1",
-    "standard-version": "^8.0.2",
     "ts-jest": "^24.3.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-immutable": "^5.5.2",
     "typescript": "^3.9.7"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "prettier": {
     "singleQuote": true
