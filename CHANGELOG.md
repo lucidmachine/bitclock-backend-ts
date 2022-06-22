@@ -1,5 +1,9 @@
 # Changelog
 
+### [1.1.5](https://github.com/lucidmachine/bitclock-backend-ts/compare/v1.1.4...v1.1.5) (2022-06-22)
+
+* Update dependencies.
+
 ### [1.1.4](https://github.com/lucidmachine/bitclock-backend-ts/compare/v1.1.3...v1.1.4) (2021-09-14)
 
 * Slash and burn dependencies and build scripts.
